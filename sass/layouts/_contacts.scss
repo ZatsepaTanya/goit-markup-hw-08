@@ -1,0 +1,36 @@
+.mail {
+    display: flex;
+    margin-left: auto;
+
+   .item:not(:last-child){
+   margin-right: 50px;
+}
+   .link {
+   color: $primary-text-color;
+   letter-spacing: 0.02em;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   text-decoration: none;
+
+   transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+}
+    .link:hover,
+    .link:focus{
+  color: $accent-color;  
+}
+
+    .link:hover .info,
+    .link:focus .info
+{
+  fill: $accent-color;
+}
+}
+
+.social-mail-phone{
+   display: flex;
+   align-items: center;
+}
+

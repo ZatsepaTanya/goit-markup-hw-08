@@ -1,0 +1,24 @@
+.customer-icon-link{
+    display: flex;
+    height: 90px;
+    width: 170px;
+    justify-content: center; 
+    align-items: center;
+}
+.section.client{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.customer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+
+ .item{
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+}
+}
