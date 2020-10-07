@@ -3,9 +3,10 @@
     padding-bottom: 94px;
 }
 .features{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+  
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content:space-between;
 
  .item::before{
     display: block;
@@ -21,7 +22,7 @@
  
 }
     .item{
-    width: 270px;
+    width: 100%;
 }
      .title {
    margin-top: 0px;
@@ -38,8 +39,22 @@
    margin-bottom: 0px;
 
    font-size: 14px;
-   line-height: 1.71;
+   line-height: 24px;
 }
+
+@include for-size(tablet){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+   } 
+   @include for-size(desktop){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+   } 
+
 }
 .icon-antenna::before{
     background-image: url(../images/antenna.svg);

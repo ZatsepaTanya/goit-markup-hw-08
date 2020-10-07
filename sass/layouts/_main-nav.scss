@@ -1,11 +1,25 @@
 .main-nav{
+
     display: flex;
     align-items: center;
   
 }
 .site-nav{
-    display: flex;
+    display: none;
+    // display: flex;
     margin-left: 93px ;
+    
+     
+    @include for-size(tablet){
+    
+        display: flex;
+
+    } 
+    @include for-size(desktop){
+        
+        display: flex;
+
+    } 
     
     .item:not(:last-child){
     margin-right: 50px;

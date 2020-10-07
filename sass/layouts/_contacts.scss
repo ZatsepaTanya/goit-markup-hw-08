@@ -1,6 +1,17 @@
 .mail {
-    display: flex;
+  display: none;
+    // display: flex;
     margin-left: auto;
+    @include for-size(tablet){
+    
+      display: flex;
+
+  } 
+  @include for-size(desktop){
+      
+      display: flex;
+
+  } 
 
    .item:not(:last-child){
    margin-right: 50px;
@@ -30,7 +41,17 @@
 }
 
 .social-mail-phone{
-   display: flex;
+  //  display: flex;
    align-items: center;
+   @include for-size(tablet){
+    
+    display: flex;
+
+} 
+@include for-size(desktop){
+    
+    display: flex;
+
+} 
 }
 

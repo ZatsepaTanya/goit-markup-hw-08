@@ -1,3 +1,17 @@
+.operation{
+    @include for-size(mobile){
+        display: none;
+
+    } 
+    @include for-size(tablet){
+        display: none;
+    } 
+    @include for-size(desktop){
+        display: block;
+
+    } 
+    
+}
 .work{
     display: flex;
    

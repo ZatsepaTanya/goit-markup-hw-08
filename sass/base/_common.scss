@@ -7,15 +7,29 @@ body {
 img{
     display: block; 
     max-width: 100%;
-    height: auto;
+    height: auto; 
 }
 .conteiner {
-    width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0px;
     margin-left: auto;
     margin-right: auto;
+
+    @include for-size(mobile){
+        width: 480px;
+
+    } 
+    @include for-size(tablet){
+        width: 768px;
+
+    } 
+    @include for-size(desktop){
+        width: 1200px;
+
+    } 
+    
 }
 .list {
     padding: 0;
