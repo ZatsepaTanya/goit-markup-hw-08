@@ -1,12 +1,19 @@
 .section.plus{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+
+    @include for-size(desktop){
+        padding-top: 94px;
+     padding-bottom: 94px;
+    }
 }
 .features{
   
-    // display: flex;
+    //  display: flex;
     // flex-wrap: wrap;
-    // justify-content:space-between;
+    
+    //  justify-content:space-between;
 
  .item::before{
     display: block;
@@ -24,7 +31,12 @@
     .item{
     width: 100%;
 }
+    .item:not(:last-child){
+    margin-bottom: 30px;
+     
+}
      .title {
+         
    margin-top: 0px;
    margin-bottom: 10px;
 
@@ -33,6 +45,7 @@
    font-size: 14px;
    line-height: 1.14;
    text-transform: uppercase;
+   text-align: center;
 }
      .text {
    margin-top: 0px;

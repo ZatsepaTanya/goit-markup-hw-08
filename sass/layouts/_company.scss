@@ -1,11 +1,15 @@
-.section.operation{
-    padding-bottom: 94px;
-}
+
 .section.job {
-   padding-top: 94px;
-   padding-bottom: 94px ;
+   padding-top: 60px;
+   padding-bottom: 60px;
    background-color: #F5F4FA;
    background-size: cover;
+
+   @include for-size(desktop){
+      padding-top: 94px;
+      padding-bottom: 94px;
+   } 
+
 }
 .company{
    // display: flex;
@@ -16,26 +20,41 @@
    border-radius: 0px 0px 4px 4px;
    background: #FFFFFF; 
    
+   
 }
-   .item:not(:last-child){
-   margin-right: 30px;
-     
-}
+   
 @include for-size(mobile){
-  display: block;
-  width: 100%;
+  display: block;}
 
-} 
-@include for-size(tablet){
+  @include for-size(tablet-only){
+  .item:not(:last-child){
+   margin-bottom: 30px;
+  } 
+}
+
+
+@include for-size(desktop-only){
    display: flex;
   flex-wrap: wrap;
-
-} 
+  
+  .item:nth-child(-n+2){
+   margin-bottom: 30px;
+}
+.item:nth-child(2n+1){
+   margin-right: 30px;
+}
+}
 @include for-size(desktop){
    display: flex;
    margin-top: 50px;
+   
+   .item:not(:last-child){
+      margin-right: 30px;
+       
+  }
 } 
 }
+
 .name{
    text-align: center;
    background: #FFFFFF;

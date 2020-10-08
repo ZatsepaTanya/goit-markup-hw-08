@@ -639,8 +639,15 @@ textarea {
 }
 
 .section.plus {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .section.plus {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .features .item::before {
@@ -659,6 +666,10 @@ textarea {
   width: 100%;
 }
 
+.features .item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .features .title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -667,6 +678,7 @@ textarea {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .features .text {
@@ -708,22 +720,18 @@ textarea {
   background-image: url(../images/astronaut.svg);
 }
 
-@media (min-width: 480px) {
-  .operation {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .operation {
-    display: none;
-  }
+.operation {
+  display: none;
 }
 
 @media (min-width: 1200px) {
   .operation {
     display: block;
   }
+}
+
+.section.operation {
+  padding-bottom: 94px;
 }
 
 .work {
@@ -757,15 +765,18 @@ textarea {
   color: #FFFFFF;
 }
 
-.section.operation {
-  padding-bottom: 94px;
-}
-
 .section.job {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #F5F4FA;
   background-size: cover;
+}
+
+@media (min-width: 1200px) {
+  .section.job {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .company .item {
@@ -774,21 +785,28 @@ textarea {
   background: #FFFFFF;
 }
 
-.company .item:not(:last-child) {
-  margin-right: 30px;
-}
-
 @media (min-width: 480px) {
   .company {
     display: block;
-    width: 100%;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
+  .company .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
   .company {
     display: flex;
     flex-wrap: wrap;
+  }
+  .company .item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  .company .item:nth-child(2n+1) {
+    margin-right: 30px;
   }
 }
 
@@ -796,6 +814,9 @@ textarea {
   .company {
     display: flex;
     margin-top: 50px;
+  }
+  .company .item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
