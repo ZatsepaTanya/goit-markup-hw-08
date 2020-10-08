@@ -641,12 +641,32 @@ textarea {
 .section.plus {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: block;
 }
 
 @media (min-width: 1200px) {
   .section.plus {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section.plus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.features {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -660,10 +680,6 @@ textarea {
   background-color: #F5F4FA;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.features .item {
-  width: 100%;
 }
 
 .features .item:not(:last-child) {
@@ -686,22 +702,6 @@ textarea {
   margin-bottom: 0px;
   font-size: 14px;
   line-height: 24px;
-}
-
-@media (min-width: 768px) {
-  .features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: 1200px) {
-  .features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 }
 
 .icon-antenna::before {
@@ -800,7 +800,6 @@ textarea {
 @media (max-width: 1199px) {
   .company {
     display: flex;
-    flex-wrap: wrap;
   }
   .company .item:nth-child(-n+2) {
     margin-bottom: 30px;

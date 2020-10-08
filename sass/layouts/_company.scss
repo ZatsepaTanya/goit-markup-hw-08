@@ -35,7 +35,7 @@
 
 @include for-size(desktop-only){
    display: flex;
-  flex-wrap: wrap;
+ flex-wrap: wrap;
   
   .item:nth-child(-n+2){
    margin-bottom: 30px;
