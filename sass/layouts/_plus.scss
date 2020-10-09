@@ -24,7 +24,7 @@
     @include for-size(tablet){
         display: flex;
         flex-wrap: wrap;
-        // justify-content:space-between;
+        justify-content:space-between;
        } 
     //    @include for-size(desktop){
     //     display: flex;
@@ -32,6 +32,10 @@
     //     justify-content:space-between;
     
     //    } 
+    .item:not(:last-child){
+        margin-bottom: 30px;
+         
+    }
  .item::before{
     display: block;
     content: '';
@@ -42,16 +46,24 @@
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
-    
- 
+ }
+ .item{   
+ width: 100%;
+    @include for-size(tablet){
+        width: 354px;
+        height: 251px;
+
+        
+        
+    }
+
+    @include for-size(desktop){
+        width: 270px;
+        height: 251px;
+    }
 }
-    .item{
-    // width: 100%;
-}
-    .item:not(:last-child){
-    margin-bottom: 30px;
-     
-}
+
+  
      .title {
          
    margin-top: 0px;
