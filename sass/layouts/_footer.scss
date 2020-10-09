@@ -12,10 +12,11 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    
         
     }
 }
+
+
 
 @include for-size(desktop){
 .post-address:not(:last-child){
@@ -28,7 +29,13 @@ margin-top: 20px;
 }
 }
 }
+
 .post-social{
+    @include for-size(tablet){
+        // display: flex;
+       
+    }
+
     @include for-size(desktop){
         display: flex;
         flex: baseline;
