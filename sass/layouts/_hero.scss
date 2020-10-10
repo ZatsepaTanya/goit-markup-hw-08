@@ -5,7 +5,7 @@
         linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), 
-        url(../images/company.jpg);
+        url(../images/mobil/mobil.jpg);
     background-color: #2F303A; 
        
     max-width: 1600px;
@@ -24,7 +24,50 @@
 
     letter-spacing: 0.06em;
     text-align: center;
+    
+    @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx){
+    background-image: 
+    linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/mobil/mobil@2x.jpg);
+  }
+  @include for-size(tablet){
+    background-image: 
+    linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/tablet/tablet.jpg);
 
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+      background-image: 
+      linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), 
+      url(../images/tablet/tablet@2x.jpg);
+    }
+  }
+    @include for-size(desktop){
+        background-image: 
+        linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/desktop/desktop.jpg);
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx){
+          background-image: 
+          linear-gradient(to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)), 
+          url(../images/desktop/desktop@2x.jpg);
+        }
+  }
 &-title {
     margin-top:0;
     margin-bottom:30px;
@@ -40,4 +83,4 @@
         line-height: 60px;
     } 
  }
-}
+  }

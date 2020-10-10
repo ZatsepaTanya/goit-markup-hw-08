@@ -1,21 +1,29 @@
 .mail {
   display: none;
-    // display: flex;
-    margin-left: auto;
-    @include for-size(tablet){
+      margin-left: auto;
     
-      display: flex;
+      @media screen and (min-width:768px) and (max-width:1200px){
+        
+          display: flex;
+          flex-direction: column;
 
   } 
   @include for-size(desktop){
-      
-      display: flex;
-
+        display: flex;
+   
   } 
+  .item:first-child{
+    @include for-size(tablet){
+      margin-bottom: 10px;
+    }
+  }
 
-   .item:not(:last-child){
-   margin-right: 50px;
-}
+  .item:not(:last-child){
+      
+    @include for-size(desktop){
+    margin-right: 50px;
+      }
+    }
    .link {
    color: $primary-text-color;
    letter-spacing: 0.02em;
@@ -40,8 +48,9 @@
 }
 }
 
+
 .social-mail-phone{
-  //  display: flex;
+  
    align-items: center;
    @include for-size(tablet){
     
@@ -54,4 +63,5 @@
 
 } 
 }
+
 
