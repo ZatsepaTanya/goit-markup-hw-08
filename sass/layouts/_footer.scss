@@ -17,7 +17,6 @@
 }
 
 
-
 @include for-size(desktop){
 .post-address:not(:last-child){
     margin-bottom: 9px;
@@ -30,9 +29,15 @@ margin-top: 20px;
 }
 }
 
+.post-social-icon{
+    @media screen and (min-width:768px) and (max-width: 1200px){
+            margin-left: 175px;
+    }
+}
 .post-social{
     @include for-size(tablet){
-        // display: flex;
+        display: flex;
+        flex-wrap: wrap;
        
     }
 

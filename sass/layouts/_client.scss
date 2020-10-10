@@ -1,10 +1,10 @@
 .customer-icon-link{
     display: flex;
     height: 90px;
-    width: 170px;
+    width: 100%;
     justify-content: center; 
     align-items: center;
-    
+       
 }
 .section.client{
     padding-top: 60px;
@@ -13,32 +13,35 @@
     @include for-size(desktop){
         padding-top: 94px;
         padding-bottom: 94px;
-        // margin-bottom: 30px;
-
+       
     } 
 
 }
 .customer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
-
+    align-content: space-between; 
+    
+       
  .item{
+    // display: flex;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
-    width: 170px;
+    width: 210px;
     height: 90px;
+    
+    // @include for-size(mobile){
+    //     width: 210px;
+    //      margin-bottom: 30px;
 
-    @include for-size(mobile){
-        width: 210px;
-        // margin-bottom: 30px;
-
-    } 
+    // } 
     @include for-size(tablet){
         width: 226px;
-         margin-bottom: 30px;
-
+        .item:not(:nth-child(3n)){
+            margin-right: 30px;
+           }
+    
     } 
     @include for-size(desktop){
         width: 170px;
@@ -46,15 +49,45 @@
     } 
     
 }
-.item:nth-last-child(n+2){
+@media screen and (min-width:768px) and (max-width: 1200px){
+    
+    .item:not(:nth-child(3n)){
+        margin-right: 30px;
+       }
+    
+     .item:nth-last-child(-n+3){
+         margin-top: 30px;
+     }
+     }
+   
 
-    @include for-size(mobile-only){
-         margin-bottom: 30px;
-
-    } 
-    @include for-size(tablet-only){
-         margin-bottom: 30px;
-
-    } 
+.item:nth-child(2n+1){
+    @include for-size(mobil){
+    margin-right: 30px;
 }
+}
+.item:not(:last-child){
+    @include for-size(desktop){
+        margin-right: 30px;
+    }
+}
+// .item:not(:last-child){
+
+//     @include for-size(tablet-only){
+//     margin-bottom: 30px;
+//    }
+// }
+
+
+    
+.item:not(:nth-last-child(-n+2)){
+        margin-bottom: 30px;
+   
+}
+.item:nth-child(2n+1){
+    @include for-size(tablet-only){
+    margin-right: 30px;
+    }
+}
+
 }
