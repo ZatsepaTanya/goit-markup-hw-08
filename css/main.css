@@ -546,12 +546,6 @@ textarea {
   justify-content: space-between;
 }
 
-@media (max-width: 767px) {
-  .main-nav {
-    align-items: center;
-  }
-}
-
 .site-nav {
   margin-left: 93px;
 }
@@ -559,6 +553,7 @@ textarea {
 @media (min-width: 768px) {
   .site-nav {
     display: flex;
+    margin-left: 88px;
   }
 }
 
@@ -585,6 +580,12 @@ textarea {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
+}
+
+@media (min-width: 768px) {
+  .site-nav .link {
+    display: flex;
+  }
 }
 
 .site-nav .link:hover,
@@ -671,6 +672,11 @@ textarea {
   .main-nav {
     display: flex;
     align-items: center;
+    align-content: space-between;
+  }
+  .main-nav {
+    align-items: center;
+    align-content: space-between;
   }
 }
 
@@ -1126,10 +1132,16 @@ textarea {
 }
 
 .post {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2F303A;
-  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .post {
+    text-align: center;
+  }
 }
 
 .post .title {
@@ -1151,12 +1163,6 @@ textarea {
   }
   .post-address:not(:last-child):first-child {
     margin-top: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .post-social-icon {
-    margin-left: 175px;
   }
 }
 
@@ -1202,6 +1208,8 @@ textarea {
 }
 
 .address {
+  display: flex;
+  flex-direction: column;
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
@@ -1305,6 +1313,7 @@ textarea {
   .example {
     display: flex;
     flex-wrap: wrap;
+    align-content: space-between;
   }
 }
 
