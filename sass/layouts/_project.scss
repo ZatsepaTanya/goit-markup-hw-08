@@ -1,8 +1,12 @@
 .conteiner.project{
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
     margin-bottom: 0px ;
     margin-top: 0px;
+    @include for-size(desktop){
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 }
 .filtr-project{
     padding: 0px;
@@ -25,8 +29,20 @@
 .filtr{
     display: flex;
      flex-wrap: wrap;
+     margin-bottom: 40px;
+     
+     @include for-size(tablet-only){
+     align-content: flex-start;
+   .item:not(:nth-last-child(-n+2)){
+       margin-bottom: 15px;
+   }
+     }
+    
+    
+ @include for-size(tablet){
     justify-content: center;
-    margin-bottom: 50px;
+ }
+    
 
 .item:not(:last-child){
 margin-right: 8px;
