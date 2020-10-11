@@ -1,28 +1,29 @@
 .mail {
   // display: none;
-      margin-left: auto;
+  display: flex;
+  margin-left: auto;
     
-      @media screen and (min-width:768px) and (max-width:1200px){
+  //     @media screen and (min-width:768px) and (max-width:1200px){
         
-          display: flex;
-          flex-direction: column;
+  //         display: flex;
+  //         flex-direction: column;
 
-  } 
-  @include for-size(desktop){
-        display: flex;
+  // } 
+  // @include for-size(desktop){
+  //       display: flex;
    
-  } 
-  .item:first-child{
-    @include for-size(tablet){
-      margin-bottom: 10px;
-    }
-  }
+  // } 
+  // .item:first-child{
+  //   @include for-size(tablet){
+  //     margin-bottom: 10px;
+  //   }
+  // }
 
   .item:not(:last-child){
       
-    @include for-size(desktop){
+    // @include for-size(desktop){
     margin-right: 50px;
-      }
+      // }
     }
    .link {
    color: $primary-text-color;
@@ -52,16 +53,16 @@
 .social-mail-phone{
   
    align-items: center;
-   @include for-size(tablet){
+  //  @include for-size(tablet){
     
     display: flex;
 
-} 
-@include for-size(desktop){
+// } 
+// @include for-size(desktop){
     
-    display: flex;
+//     display: flex;
 
-} 
+// } 
 }
 
 

@@ -76,50 +76,50 @@
         .policy-button-form{
             position: relative;
         }
-        @include for-size(tablet-only){
-        .burger{
-            display: inline-flex;
-            margin: 0;
-            padding: 0;
-            border: none;
-            background-color: transparent;
+    //     @include for-size(tablet-only){
+    //     .burger{
+    //         display: inline-flex;
+    //         margin: 0;
+    //         padding: 0;
+    //         border: none;
+    //         background-color: transparent;
 
-            // margin-top: 10px;
-            // margin-right: 10px;
-            // margin-bottom: 10px;
-        }
-        .burger .icon-cross{
-            display: none;
-            &:hover{
-                fill: $accent-color;
-            }
-            &:focus{
-                fill: $accent-color;
-            }
-            &{
-                transition-property: fill;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
-            }
+    //         // margin-top: 10px;
+    //         // margin-right: 10px;
+    //         // margin-bottom: 10px;
+    //     }
+    //     .burger .icon-cross{
+    //         display: none;
+    //         &:hover{
+    //             fill: $accent-color;
+    //         }
+    //         &:focus{
+    //             fill: $accent-color;
+    //         }
+    //         &{
+    //             transition-property: fill;
+    //             transition-duration: 250ms;
+    //             transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+    //         }
 
-        }
-        .burger .icon-menu{
-            &:hover{
-                fill: $accent-color;
-            }
-            &:focus{
-                fill: $accent-color;
-            }
-            &{
-                transition-property: fill;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
-            }
-        }
-        .burger.is-open .icon-cross{
-            display: block;
-        }
-        .burger.is-open .icon-menu{
-            display: none;
-        }
-    }
+    //     }
+    //     .burger .icon-menu{
+    //         &:hover{
+    //             fill: $accent-color;
+    //         }
+    //         &:focus{
+    //             fill: $accent-color;
+    //         }
+    //         &{
+    //             transition-property: fill;
+    //             transition-duration: 250ms;
+    //             transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+    //         }
+    //     }
+    //     .burger.is-open .icon-cross{
+    //         display: block;
+    //     }
+    //     .burger.is-open .icon-menu{
+    //         display: none;
+    //     }
+    // }
