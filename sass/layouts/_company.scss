@@ -41,15 +41,20 @@
    @include for-size(tablet){
   display: flex;
   flex-wrap: wrap;
+  
    }
 
    .item{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #FFFFFF; 
+  
     
 }
 @media screen and (min-width:768px) and (max-width: 1200px){
+   .item{
+      width: 354px;
+   }
    .item:nth-child(2n){
    margin-left: 30px;
    }
@@ -58,15 +63,23 @@
    
    }
    }
-//   .item:nth-last-child(-n+2){
-//  @media screen and (min-width:768px) and (max-width: 1200px){
-// margin-top: 30px;
-//      }
-// }
-@include for-size(mobil){
+  .item:nth-last-child(-n+2){
+ @media screen and (min-width:768px) and (max-width: 1200px){
+margin-top: 30px;
+     }
+}
+@include for-size(tablet-only){
 .item:not(:first-child){
    
    margin-top: 30px;
+}
+}
+@include for-size(desktop){
+.item{
+   width: 270px;
+}
+.item:not(:first-child){
+   margin-left: 30px;
 }
 }
 
