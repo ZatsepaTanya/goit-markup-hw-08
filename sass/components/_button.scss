@@ -76,4 +76,25 @@
         .policy-button-form{
             position: relative;
         }
-        
+        @include for-size(tablet-only){
+        .burger{
+            display: inline-flex;
+            margin: 0;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+
+            // margin-top: 10px;
+            // margin-right: 10px;
+            // margin-bottom: 10px;
+        }
+        .burger .icon-cross{
+            display: none;
+        }
+        .burger.is-open .icon-cross{
+            display: block;
+        }
+        .burger.is-open .icon-menu{
+            display: none;
+        }
+    }

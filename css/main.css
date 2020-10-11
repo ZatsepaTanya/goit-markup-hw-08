@@ -176,6 +176,25 @@ p {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .burger {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .burger .icon-cross {
+    display: none;
+  }
+  .burger.is-open .icon-cross {
+    display: block;
+  }
+  .burger.is-open .icon-menu {
+    display: none;
+  }
+}
+
 .social-icon {
   width: 20px;
   height: 20px;
@@ -502,7 +521,13 @@ textarea {
 
 .main-nav {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .main-nav {
+    align-items: center;
+  }
 }
 
 .site-nav {
@@ -559,6 +584,42 @@ textarea {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
+}
+
+@media (max-width: 767px) {
+  .page-header {
+    position: relative;
+  }
+  .menu-conteiner {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 453px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .menu-conteiner.is-open {
+    display: block;
+  }
+  .burger-list {
+    margin-bottom: 60px;
+  }
+  .burger-list.item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .mail {

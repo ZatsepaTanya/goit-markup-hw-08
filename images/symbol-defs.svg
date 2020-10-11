@@ -64,5 +64,10 @@
 <symbol id="Vector2" viewBox="0 0 42 32">
 <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.262 15.206l-0.221-0.211-0.221 0.208-3.085 2.925 0.243 0.234 11.408 10.88 0.221-0.211 24.256-23.139-0.243-0.23-3.043-2.902-0.221 0.211-20.97 19.987-8.125-7.75z"></path>
 </symbol>
+
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" id="menu_40px">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.667V12h24v2.667H8zm0 6.666h24v-2.666H8v2.666zM8 28h24v-2.667H8V28z" fill="#000"></path>
+  </symbol>
+
 </defs>
 </svg>
