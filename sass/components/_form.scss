@@ -2,7 +2,11 @@
     position: absolute;
     top: 100px;
     left: 40px;
-    width: 448px;
+    width: 370px;
+    @include for-size(desktop){
+        width: 448px;
+    }
+    
 
 }
 .form-policy{
@@ -43,11 +47,14 @@ transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
 }
 & textarea{
     height: 120px;
-    width: 448px;
+    width: 370px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
 
     border-radius: 4px;
+    @include for-size(desktop){
+        width: 448px;
+    }
 }
 & textarea::placeholder{
     font-family: Roboto;

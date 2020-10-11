@@ -18,12 +18,15 @@
     left: 50%;
 transform: translate(-50%, -50%);
 
-    width: 528px;
-height: 581px;
+    width: 450px;
+    height: 609px;
     background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
-
+@include for-size(desktop){
+    width: 528px;
+    height: 581px;
+}
 
 &-text{
     position: absolute;
@@ -100,18 +103,29 @@ textarea{
     white-space: nowrap;
 
 }
-.policy-click{
-    
+.policy-click,
+.form-policy{
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+
+
+
+    @include for-size( desktop){
+
 font-size: 14px;
 line-height: 24px;
 /* identical to box height, or 171% */
 
-letter-spacing: 0.03em;
-
-color: #757575;
+    }
+}
+.policy-click{
+    color: #757575;
 }
 
 .checkbox-label span::before{
