@@ -1319,6 +1319,10 @@ textarea {
   }
 }
 
+.example .item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .example .item {
   border: 1px solid #EEEEEE;
   background: #FFFFFF;
@@ -1326,6 +1330,10 @@ textarea {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
+}
+
+.example .item.item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
