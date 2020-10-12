@@ -176,47 +176,6 @@ p {
   position: relative;
 }
 
-@media (max-width: 767px) {
-  .burger {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-  }
-  .burger .icon-cross {
-    display: none;
-  }
-  .burger .icon-cross:hover {
-    fill: #2196F3;
-  }
-  .burger .icon-cross:focus {
-    fill: #2196F3;
-  }
-  .burger .icon-cross {
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
-  }
-  .burger .icon-menu:hover {
-    fill: #2196F3;
-  }
-  .burger .icon-menu:focus {
-    fill: #2196F3;
-  }
-  .burger .icon-menu {
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
-  }
-  .burger.is-open .icon-cross {
-    display: block;
-  }
-  .burger.is-open .icon-menu {
-    display: none;
-  }
-}
-
 .social-icon {
   width: 20px;
   height: 20px;
@@ -543,17 +502,17 @@ textarea {
 
 .main-nav {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .site-nav {
+  display: none;
   margin-left: 93px;
 }
 
 @media (min-width: 768px) {
   .site-nav {
     display: flex;
-    margin-left: 88px;
   }
 }
 
@@ -582,12 +541,6 @@ textarea {
   transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
 }
 
-@media (min-width: 768px) {
-  .site-nav .link {
-    display: flex;
-  }
-}
-
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196F3;
@@ -595,13 +548,6 @@ textarea {
 
 .site-nav .item {
   position: relative;
-}
-
-@media (max-width: 767px) {
-  .site-nav .item {
-    width: 99px;
-    height: 155;
-  }
 }
 
 .site-nav .current {
@@ -615,98 +561,13 @@ textarea {
   transition-timing-function: cubic-bezier 0.4, 0, 0.2, 1;
 }
 
-@media (max-width: 767px) {
-  .page-header {
-    position: relative;
-  }
-  .menu-conteiner {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    width: 100%;
-    height: 453px;
-    text-align: center;
-    font-size: 18px;
-  }
-  .menu-conteiner.is-open {
-    display: block;
-  }
-  .burger-list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-    margin-top: 60px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height */
-    letter-spacing: 0.02em;
-    color: #212121;
-  }
-  .burger-mail {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height */
-    letter-spacing: 0.02em;
-    color: #757575;
-  }
-  .burger-mail.item {
-    margin-bottom: 16px;
-  }
-}
-
-@media (min-width: 768px) {
-  .burger {
-    display: none;
-  }
-  .main-nav {
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-  }
-  .main-nav {
-    align-items: center;
-    align-content: space-between;
-  }
-}
-
 .mail {
+  display: flex;
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .mail {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 1200px) {
-  .mail {
-    display: flex;
-  }
-}
-
-@media (min-width: 768px) {
-  .mail .item:first-child {
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .mail .item:not(:last-child) {
-    margin-right: 50px;
-  }
+.mail .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .mail .link {
@@ -733,18 +594,7 @@ textarea {
 
 .social-mail-phone {
   align-items: center;
-}
-
-@media (min-width: 768px) {
-  .social-mail-phone {
-    display: flex;
-  }
-}
-
-@media (min-width: 1200px) {
-  .social-mail-phone {
-    display: flex;
-  }
+  display: flex;
 }
 
 .section-title {
@@ -1163,6 +1013,13 @@ textarea {
   }
   .post-address:not(:last-child):first-child {
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .page-header.conteiner {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
