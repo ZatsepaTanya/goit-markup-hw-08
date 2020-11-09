@@ -1,0 +1,179 @@
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    padding-top: 24px;
+  }
+
+  .header__logo {
+    margin-right: 93px;
+  }
+
+  .header__navigation {
+    margin-right: 305px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-align: start;
+    margin-top: 21px;
+
+    &__link {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .contacts__item:first-child {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero_desktop.jpg);
+
+    &__title {
+      font-size: 44px;
+    }
+  }
+
+  .second-title {
+    font-size: 36px;
+  }
+
+  .team__member {
+    width: 260px;
+    margin-bottom: 0;
+  }
+
+  .team__member:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .clients__item {
+    width: 170px;
+  }
+
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__item {
+      width: 270px;
+    }
+
+    &__item:nth-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+    &__item:nth-child(odd) {
+      margin-right: 0;
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__paragraph {
+      margin-bottom: 0;
+    }
+  }
+
+  .modal {
+    max-width: 528px;
+    height: auto;
+  }
+
+  .checkbox__label {
+    font-size: 14px;
+  }
+
+  .modal__submit--button {
+    margin-left: 124px;
+  }
+
+  .portfolio__works {
+    padding-bottom: 94px;
+  }
+
+  .works__thumb {
+    width: auto;
+  }
+
+  .works__item {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .works__item:nth-child(n + 7) {
+    margin-bottom: 0;
+  }
+
+  .works__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .buttons__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .portfolio__buttons {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+
+  .portfolio__works {
+    padding-bottom: 94px;
+  }
+
+  .footer__part:last-child {
+    width: 50%;
+  }
+
+  .footer__part:nth-child(-n + 2) {
+    width: 25%;
+  }
+
+  .footer__address {
+    margin-bottom: 0;
+  }
+
+  .signing__form {
+    display: block;
+  }
+
+  .form-input {
+    width: 368px;
+    margin-right: 12px;
+    font-size: 16px;
+  }
+
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .clients__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}

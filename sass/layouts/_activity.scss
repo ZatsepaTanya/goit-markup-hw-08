@@ -1,0 +1,53 @@
+@media screen and (min-width: 320px) {
+  .activity {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .activity {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .activity {
+    display: block;
+    padding-bottom: 94px;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    &__item {
+      z-index: -1;
+    }
+
+    &__thumb {
+      position: relative;
+    }
+
+    &__name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      height: 70px;
+      background-color: rgba(47, 48, 58, 0.8);
+      bottom: 0;
+      right: 0;
+      margin: 0;
+
+      font-style: normal;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 1.2;
+      text-align: center;
+      color: $primary-white-color;
+    }
+  }
+}

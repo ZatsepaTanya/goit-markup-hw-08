@@ -1,0 +1,76 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  &__item {
+    display: flex;
+    height: 90px;
+    width: 210px;
+    justify-content: center;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+    align-items: center;
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+  }
+
+  &__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  &__item:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+
+  &__item svg {
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+  }
+
+  &__item:hover {
+    border: 1px solid $accent-color;
+  }
+  &__item:hover svg {
+    fill: $accent-color;
+  }
+
+  &__logo {
+    fill: $icon-color;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .clients__item:not(:last-child) {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .clients__item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients__item {
+    display: flex;
+    height: 90px;
+    width: 210px;
+    justify-content: center;
+  }
+
+  .clients__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  .clients__item:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
+}
